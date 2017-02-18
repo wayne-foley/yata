@@ -1,0 +1,6 @@
+version: '2'
+services:
+  api:
+    build: ./src/APIServer
+    ports:
+    - "5000:5000"

@@ -9,5 +9,4 @@ RUN ["dotnet", "build"]
 
 EXPOSE 5000/tcp
 
-RUN chmod +x /app/start.sh
-CMD /app/start.sh
+ENTRYPOINT ["dotnet", "run" ,"--server.urls","http://*:5000"]

@@ -14,7 +14,7 @@ namespace APIServer.Controllers
         public IEnumerable<string> Get()
         {
             //throw new NotImplementedException("TDD");
-            return new string[] { };
+            return new string[] { "Item1" };
         }
 
         // GET api/todo/5
