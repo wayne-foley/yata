@@ -16,7 +16,7 @@ namespace APIServer.Tests
 
             //Assert
             Assert.NotNull(todos);
-            Assert.Empty(todos);
+            Assert.NotEmpty(todos);
         }
     }
 }

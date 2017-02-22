@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using APIServer.Models;
 
 namespace APIServer.Controllers
 {
     [Route("api/[controller]")]
     public class TodoController : Controller
     {
+        protected ITodoRepository repo = TodoRepository.Create();
+
         // GET api/todo
         [HttpGet]
         public IEnumerable<string> Get()
